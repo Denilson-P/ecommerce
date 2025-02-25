@@ -1,4 +1,4 @@
-"""from django.test import TestCase
+from django.test import TestCase
 
 from .models import Client, Product
 
@@ -14,4 +14,4 @@ class ProductModelTest(TestCase):
         product = Product.objects.create(product_name="Notebook", category="Eletronicos", price_product=3500.00)
         self.assertEqual(product.product_name, "Notebook")
         self.assertEqual(product.category, "Eletronicos")
-        self.assertEqual(product.price_product, 3500.00)"""
+        self.assertEqual(product.price_product, 3500.00)

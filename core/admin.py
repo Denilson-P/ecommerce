@@ -4,7 +4,7 @@ from .models import Client, Product, Sale, Avaliation
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
-    list_display = ("name", "cpf", "date_birth")
+    list_display = ("name", "cpf", "email", "date_birth")
     search_fields = ("name", "cpf")
 
 
@@ -12,6 +12,7 @@ class ClientAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ("product_name", "category", "price_product")
     search_fields = ("product_name", "category")
+    list_filter = ("category",)
 
 
 @admin.register(Sale)
