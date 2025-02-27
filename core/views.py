@@ -1,6 +1,11 @@
 from rest_framework import viewsets
 
-from .serializers import ClientSerializer, ProductSerializer, SaleSerializer, AvaliationSerializer
+from .serializers import (
+    ClientSerializer,
+    ProductSerializer,
+    SaleSerializer,
+    AvaliationSerializer,
+)
 from .models import Client, Product, Sale, Avaliation
 
 
