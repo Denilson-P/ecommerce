@@ -9,3 +9,5 @@ router.register("client", ClientViewSet)
 router.register("product", ProductViewSet)
 router.register("sale", SaleViewSet)
 router.register("avaliation", AvaliationViewSet)
+
+urlpatterns = router.urls

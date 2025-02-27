@@ -7,13 +7,15 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('core', '0003_auto_20250224_1708'),
+        ("core", "0003_auto_20250224_1708"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='avaliation',
-            name='product',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.product'),
+            model_name="avaliation",
+            name="product",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE, to="core.product"
+            ),
         ),
     ]

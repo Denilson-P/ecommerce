@@ -16,7 +16,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 @admin.register(Sale)
-class SaleAmin(admin.ModelAdmin):
+class SaleAdmin(admin.ModelAdmin):
     list_display = ("client", "product", "amount", "sale_date")
     list_filter = ("sale_date",)
 
@@ -26,4 +26,3 @@ class AvaliationAdmin(admin.ModelAdmin):
     list_display = ("product", "client", "rating", "created_at")
     list_filter = ("rating", "created_at")
     search_fields = ("product__product_name", "client__name")
-    
