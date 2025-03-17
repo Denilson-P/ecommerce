@@ -52,7 +52,7 @@ class Sale(models.Model):
 
 
 class Avaliation(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name="avaliation", on_delete=models.CASCADE)
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     rating = models.IntegerField(
         choices=[(i, i) for i in range(1, 6)],
